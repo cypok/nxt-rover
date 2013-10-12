@@ -6,7 +6,7 @@ const int MAX_TURNER = 200;
 const int MAX_TURNER_SPEED = 50;
 const int TURNER_THRESHOLD = 10;
 const int TURNER_CONTROLLER_SENSITIVITY = 3;
-const int ENGINE_CONTROLLER_SENSITIVITY = 1;
+const int ENGINE_CONTROLLER_SENSITIVITY = 4;
 
 int limit(int val, int max) {
   if (val > max) {
@@ -23,8 +23,14 @@ task main()
   nMotorEncoder[turner] = 0;
 
   for (;;) {
+    while (bQueuedMsgAvailable()) {
+      ClearMessage();
+      int temp = message;
+    }
+
     int nonEmpty = messageParm[0];
     if (nonEmpty == 0) {
+      wait1Msec(5);
       continue;
     }
 
