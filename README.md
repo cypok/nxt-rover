@@ -1,4 +1,5 @@
-Project for HackDay II at Excelsior LLC hold on October 11th 2013.
+### Project for HackDay II at Excelsior LLC hold on October 11th 2013. ###
+
 
 We created remote controlled rover with camera streaming. Yeah!
 
@@ -11,7 +12,6 @@ Some photos:
 
 
 Made by
-
 * Ivan Ugliansky aka dbg;
 * Svyatoslav Scherbina aka xcr;
 * Vladimir Parfinenko aka cypok.
